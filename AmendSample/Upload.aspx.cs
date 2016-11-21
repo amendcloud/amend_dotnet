@@ -22,6 +22,7 @@ namespace AmendSample
         {
             byte[] fileBytes = fileUpload.FileBytes;
             //Set your amend credentials
+
             //Amend.SetAmendName("Your-Amend-name");
             //Amend.SetCredentials("Your-Access-Key", "Your-Access-Secret");
             Amend.AmendResponse resp = await am.UploadAsync(fileBytes);
