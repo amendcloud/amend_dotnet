@@ -21,8 +21,9 @@ namespace AmendSample
         protected async void btnUpload_Click(object sender, EventArgs e)
         {
             byte[] fileBytes = fileUpload.FileBytes;
-            Amend.SetAmendName("saurabh");
-            Amend.SetCredentials("e9235337-d113-4c28-b0ff-b924396655b0", "2357bbaa302e7ede07712ba0cadb1f34");
+            //Set your amend credentials
+            //Amend.SetAmendName("Your-Amend-name");
+            //Amend.SetCredentials("Your-Access-Key", "Your-Access-Secret");
             Amend.AmendResponse resp = await am.UploadAsync(fileBytes);
             if (resp.StatusCode == 200)
             {
@@ -44,8 +45,9 @@ namespace AmendSample
             var id = hfImgId.Value.ToString();
             var file = Server.MapPath("~/Images/" + id + ".jpg");
             byte[] image = System.IO.File.ReadAllBytes(file);
-            Amend.SetAmendName("saurabh");
-            Amend.SetCredentials("e9235337-d113-4c28-b0ff-b924396655b0", "2357bbaa302e7ede07712ba0cadb1f34");
+            //Set your amend credentials
+            //Amend.SetAmendName("Your-Amend-name");
+            //Amend.SetCredentials("Your-Access-Key", "Your-Access-Secret");
             Amend.AmendResponse resp = await am.UploadAsync(image);
             if (resp.StatusCode == 200)
             {
