@@ -12,7 +12,6 @@ namespace AmendSample
 {
     public partial class ImageProcess : System.Web.UI.Page
     {
-        Amend am = new Amend();
         string ImageId = string.Empty;
         string ImageUrl = string.Empty;
         protected void Page_Load(object sender, EventArgs e)
@@ -35,7 +34,7 @@ namespace AmendSample
 
         protected void btnGet_Click(object sender, EventArgs e)
         {
-           
+
             AmendOptions op = new AmendOptions();
             AmendTransform amTransform = new AmendTransform();
             //Transformation
@@ -215,11 +214,11 @@ namespace AmendSample
             op.GrayScale(chkGrayScale.Checked);
             if (!string.IsNullOrEmpty(ImageId))
             {
-                new RequestManager().Load(ImageId, op).Into(Image1);
+                Amend.Init().Load(ImageId, op).Into(Image1);
             }
             else if (!string.IsNullOrEmpty(ImageUrl))
             {
-                new RequestManager().Fetch(ImageUrl, op).Into(Image1);
+                Amend.Init().Fetch(ImageUrl, op).Into(Image1);
             }
         }
     }

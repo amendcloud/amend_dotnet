@@ -12,7 +12,7 @@ namespace AmendSample
 {
     public partial class Upload : System.Web.UI.Page
     {
-        Amend am = new Amend();
+        Amend amend = new Amend();
         protected void Page_Load(object sender, EventArgs e)
         {
 
