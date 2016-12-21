@@ -25,10 +25,10 @@ Please see NuGet Documentation at http://docs.nuget.org/ for instructions of how
 1. Download NuGet Package Manager at http://visualstudiogallery.msdn.microsoft.com/27077b70-9dad-4c64-adcf-c7cf6bc9970c
 2. Use Visual Studio to create a new project and choose .NET 3.5 as the target framework.
 3. Right click on the project in Solution Explorer and click on Manage NuGet packages...
-4. Type CloudinaryDotNet in the search box at the upper right corner.
-5. When CloudinaryDotNet package appears, click on the Install button.
+4. Type Amend in the search box at the upper right corner.
+5. When Amend package appears, click on the Install button.
 6. After the package is installed click Close button.
-7. Setup is done and you can now use CloudinaryDotNet.
+7. Setup is done and you can now use Amend.
 
 ### Manual setup
 
