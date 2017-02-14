@@ -25,7 +25,7 @@ namespace AmendSample
 
             //Amend.SetAmendName("Your-Amend-name");
             //Amend.SetCredentials("Your-Access-Key", "Your-Access-Secret");
-            Amend.AmendResponse resp = await am.UploadAsync(fileBytes);
+            Amend.AmendResponse resp = await amend.UploadAsync(fileBytes);
             if (resp.StatusCode == 200)
             {
                 Response.Redirect("ImageProcess.aspx?ImageId=" + resp.ImageName);
@@ -49,7 +49,7 @@ namespace AmendSample
             //Set your amend credentials
             //Amend.SetAmendName("Your-Amend-name");
             //Amend.SetCredentials("Your-Access-Key", "Your-Access-Secret");
-            Amend.AmendResponse resp = await am.UploadAsync(image);
+            Amend.AmendResponse resp = await amend.UploadAsync(image);
             if (resp.StatusCode == 200)
             {
                 Response.Redirect("ImageProcess.aspx?ImageId=" + resp.ImageName);
